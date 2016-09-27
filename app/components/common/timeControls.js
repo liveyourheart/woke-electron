@@ -7,8 +7,8 @@ import {cyan700} from 'material-ui/styles/colors';
 export default class TimeControls extends Component {
     render() {
         const iconStyle = {
-            height: '60px',
-            width: '60px',
+            height: '80px',
+            width: '80px',
             display: 'inline-block',
             marginLeft: '-18px',
             marginTop: '-20px'
@@ -21,7 +21,9 @@ export default class TimeControls extends Component {
         }
         return (
             <div className = "time-controls">
-                <IconButton style={style} iconStyle={iconStyle}>
+                <IconButton style={style} iconStyle={iconStyle}
+                    disableTouchRipple={true}
+                >
                     <AvPlayCircleFilled color={cyan700} />
                 </IconButton>
             </div>
