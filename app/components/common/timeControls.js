@@ -12,7 +12,6 @@ export default class TimeControls extends Component {
             display: 'inline-block',
             marginLeft: '-18px',
             marginTop: '-20px'
-            //marginRight: '-18px'
         }
         const style = {
             marginLeft: 'auto',
