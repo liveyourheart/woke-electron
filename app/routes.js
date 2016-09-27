@@ -5,6 +5,7 @@ import HomePage from './containers/HomePage';
 import CounterPage from './containers/CounterPage';
 import PomodoroPage from './containers/PomodoroPage';
 import StopWatchPage from './containers/StopWatchPage';
+import HabitsPage from './containers/HabitsPage';
 
 export default (
   <Route path="/" component={App}>
@@ -12,5 +13,6 @@ export default (
     <Route path="/counter"   component={CounterPage} />
     <Route path="/pomodoro"  component={PomodoroPage} />
     <Route path="/stopwatch" component={StopWatchPage} />
+    <Route path="/habits"    component={HabitsPage} />
   </Route>
 );
