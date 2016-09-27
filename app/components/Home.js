@@ -16,6 +16,8 @@ export default class Home extends Component {
           <Link to="/stopwatch">STOPWATCH</Link>
           <br />
           <Link to="/habits">HABITS</Link>
+          <br />
+          <Link to="/todos">TODOS</Link>
         </div>
       </div>
     );
