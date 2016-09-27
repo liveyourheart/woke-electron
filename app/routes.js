@@ -4,11 +4,13 @@ import App from './containers/App';
 import HomePage from './containers/HomePage';
 import CounterPage from './containers/CounterPage';
 import PomodoroPage from './containers/PomodoroPage';
+import StopWatchPage from './containers/StopWatchPage';
 
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={HomePage} />
-    <Route path="/counter"  component={CounterPage} />
-    <Route path="/pomodoro" component={PomodoroPage} />
+    <Route path="/counter"   component={CounterPage} />
+    <Route path="/pomodoro"  component={PomodoroPage} />
+    <Route path="/stopwatch" component={StopWatchPage} />
   </Route>
 );

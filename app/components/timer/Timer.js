@@ -5,9 +5,10 @@ export default class Timer extends Component {
   render() {
     return (
       <div>
-        <div >
+          <Link to="/">
+            <i className="fa fa-arrow-left fa-3x" />
+          </Link>
           <h2>Timer</h2>          
-        </div>
       </div>
     );
   }

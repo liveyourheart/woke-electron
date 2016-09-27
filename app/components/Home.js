@@ -11,7 +11,9 @@ export default class Home extends Component {
           <h2>Home</h2>
           <Link to="/counter">to Counter</Link>
           <br />
-          <Link to="/pomodoro">Pomodoro</Link>
+          <Link to="/pomodoro">Pomodoro</Link>          
+          <br />
+          <Link to="/stopwatch">Stop Watch</Link>
         </div>
       </div>
     );
