@@ -8,7 +8,6 @@ export default class TodosPage extends Component {
   render() {
     return (
       <div>
-        <NavBar />
         <Todos />
       </div>
     );
