@@ -47,8 +47,8 @@ export default class TreeView extends Component {
 
         const activeList = listItems[3];
 
-        const IconStyle = {
-            color: '#fff'
+        const treeStyle = {
+            height: '65vh'
         }
 
         return (
@@ -60,7 +60,7 @@ export default class TreeView extends Component {
                     listItemIsEnabled={true}
                     activeListItem = {2}
                     expandedListItems = {[1,2]}
-                    style = {IconStyle}                
+                    style = {treeStyle}                
                 />
             </div>    
         );
