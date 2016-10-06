@@ -8,7 +8,7 @@ export default class StopWatchPage extends Component {
   render() {
     return (
       <div>
-        <Timer />
+        <Timer showProgress={false}/>
       </div>
     );
   }

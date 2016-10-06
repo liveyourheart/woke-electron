@@ -8,7 +8,7 @@ export default class PomodoroPage extends Component {
   render() {
     return (
       <div>
-        <Timer />
+        <Timer showProgress={true}/>
       </div>
     );
   }

@@ -7,10 +7,13 @@ import TimeControls from '../common/timeControls';
 import SaveButton from '../common/saveButton';
 
 export default class Timer extends Component {
+  constructor(props){
+    super();
+  }
   render() {
     return (
       <div>
-          <ProgressBar />          
+          {this.props.showProgress ? <ProgressBar /> : null}        
           <TimeInput />
           <TimeControls />
           <TaskInputs />
