@@ -8,7 +8,6 @@ export default class HabitsPage extends Component {
   render() {
     return (
       <div>
-        <NavBar />
         <Habits />
       </div>
     );

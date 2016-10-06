@@ -8,7 +8,6 @@ export default class StopWatchPage extends Component {
   render() {
     return (
       <div>
-        <NavBar />
         <Timer />
       </div>
     );

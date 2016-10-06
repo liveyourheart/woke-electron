@@ -8,7 +8,6 @@ export default class PomodoroPage extends Component {
   render() {
     return (
       <div>
-        <NavBar />
         <Timer />
       </div>
     );
