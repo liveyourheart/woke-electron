@@ -10,6 +10,13 @@ export default class NavBar extends Component {
             menu : false
         }
 
+        this.closeMenu = () => {
+            setTimeout(
+                () => { this.setState({menu: false}); },
+                50
+            );
+        }
+
         this.handleChange = (e, menu) => {
             e.preventDefault();
             this.setState({menu: !this.state.menu});
@@ -28,7 +35,7 @@ export default class NavBar extends Component {
                     title="Woke"
                     onLeftIconButtonTouchTap={this.handleChange}
                 />
-                {this.state.menu ? <NavBarMenu style={MenuStyle} /> : null }
+                {this.state.menu ? <NavBarMenu style={MenuStyle} closeMenu={this.closeMenu}/> : null }
             </div>
         )
     }
