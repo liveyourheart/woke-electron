@@ -35,7 +35,7 @@ export default class NavBar extends Component {
                     title="Woke"
                     onLeftIconButtonTouchTap={this.handleChange}
                 />
-                {this.state.menu ? <NavBarMenu style={MenuStyle} closeMenu={this.closeMenu}/> : null }
+                {this.state.menu ? <NavBarMenu style={MenuStyle} menu={this.state.menu} closeMenu={this.closeMenu}/> : null }
             </div>
         )
     }
