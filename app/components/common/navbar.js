@@ -1,12 +1,43 @@
-import React, { component } from 'react';
-import { Link } from 'react-router';
+import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
+import NavBarMenu from './navBarMenu';
 
-const NavBar = () => (
-    <AppBar
-        title="Woke"
-        iconClassNameRight="muidocs-icon-navigation-expand-more"
-    />
-);
+export default class NavBar extends Component {
+    constructor(props){
+        super();
 
-export default NavBar;
+        this.state = {
+            menu : false
+        }
+
+        this.closeMenu = () => {
+            setTimeout(
+                () => { this.setState({menu: false}); },
+                50
+            );
+        }
+
+        this.handleChange = (e, menu) => {
+            e.preventDefault();
+            this.setState({menu: !this.state.menu});
+        };
+    }
+
+    render() {
+        const MenuStyle = 
+        {
+            display: "absolute"
+        }
+
+        return(
+            <div>
+                <AppBar
+                    title="Woke"
+                    onLeftIconButtonTouchTap={this.handleChange}
+                />
+                {this.state.menu ? <NavBarMenu style={MenuStyle} closeMenu={this.closeMenu}/> : null }
+            </div>
+        )
+    }
+}
+    
