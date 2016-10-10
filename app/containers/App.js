@@ -2,7 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import NavBar from '../components/common/navbar';
+import NavBar from '../components/common/navBar';
+import NavbarMenu from '../components/common/navBarMenu';
 
 export default class App extends Component {
   static propTypes = {
@@ -12,12 +13,12 @@ export default class App extends Component {
   render() {
     return (
       <div>
-      <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-      <NavBar />
-      </MuiThemeProvider>
-      <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-        {this.props.children}
-      </MuiThemeProvider>
+        <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+        <NavBar />
+        </MuiThemeProvider>
+        <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+          {this.props.children}
+        </MuiThemeProvider>
       </div>
     );
   }
