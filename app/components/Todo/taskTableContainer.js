@@ -6,10 +6,10 @@ export default class TaskTableContainer extends Component {
     render() {
         const style = 
         {
+            height: '100vh',
             width: '69.7%',
             display: 'inline',
-            float: 'right',
-            height: '90vh'
+            float: 'right'
         }
 
         return (

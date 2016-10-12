@@ -11,15 +11,15 @@ export default class TreeViewContainer extends Component {
             width: '30%',
             display: 'inline',
             float: 'left',
-            height: '90vh'
+            height: '95vh'
         }
         const paperStyle = 
         {
-            height: '80vh'
+            height: '90vh'
         }
         return (
             <div style={style}>
-                <Paper style={paperStyle} zDepth={3}>
+                <Paper style={paperStyle} zDepth={1}>
                     <TreeView />
                     <Divider />
                     <TreeButtons />
