@@ -10,9 +10,6 @@ export default class Todos extends Component {
       <div>
           <TreeViewContainer />
           <TaskTableContainer />
-          <Link to="/">
-            <i className="fa fa-arrow-left fa-3x" />
-          </Link>  
       </div>
     );
   }
