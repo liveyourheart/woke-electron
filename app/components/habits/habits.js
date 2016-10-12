@@ -18,7 +18,7 @@ export default class Habits extends Component {
     const buttonLabelStyle = {
       fontSize: "150%",
     }
-    const buttonLink=<Link to="/"></Link>
+    const buttonLink=<Link to="/addHabit"></Link>
     return (
       <div>
         <Paper style={style}>
