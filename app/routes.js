@@ -7,6 +7,7 @@ import PomodoroPage from './containers/PomodoroPage';
 import StopWatchPage from './containers/StopWatchPage';
 import HabitsPage from './containers/HabitsPage';
 import TodosPage from './containers/TodosPage';
+import AddHabitPage from './containers/AddHabitPage'
 
 export default (
   <Route path="/" component={App}>
@@ -16,5 +17,6 @@ export default (
     <Route path="/stopwatch" component={StopWatchPage} />
     <Route path="/habits"    component={HabitsPage} />
     <Route path="/todos"     component={TodosPage} />
+    <Route path="/addHabit"  component={AddHabitPage} />
   </Route>
 );
