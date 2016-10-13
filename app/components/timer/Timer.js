@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import TaskInputs from '../common/taskInputs';
-import ProgressBar from '../common/progressBar';
-import TimeInput from '../common/timeInput';
-import TimeControls from '../common/timeControls';
-import SaveButton from '../common/saveButton';
+import TaskInputs from './taskInputs';
+import ProgressBar from './progressBar';
+import TimeInput from './timeInput';
+import TimeControls from './timeControls';
+import SaveButton from './saveButton';
 
 export default class Timer extends Component {
   constructor(props){
