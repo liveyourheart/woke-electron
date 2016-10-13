@@ -7,7 +7,7 @@ export default class TaskTable extends Component {
     render() {
         const style = 
         {
-            height: '80vh'
+            height: '90vh'
         }
         return (
             <div>

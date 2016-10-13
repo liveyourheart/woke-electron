@@ -17,10 +17,7 @@ export default class Timer extends Component {
           <TimeInput />
           <TimeControls />
           <TaskInputs />
-          <SaveButton />
-          <Link to="/">
-            <i className="fa fa-arrow-left fa-3x" />
-          </Link>         
+          <SaveButton />   
       </div>
     );
   }
