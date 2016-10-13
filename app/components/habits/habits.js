@@ -27,7 +27,7 @@ export default class Habits extends Component {
           <HabitCategory category="MONTHLY"/>
           <RaisedButton
             primary={true}
-            label="+Habit"
+            label="+HABIT"
             style={buttonStyle}
             labelStyle={buttonLabelStyle}
             containerElement={buttonLink}
