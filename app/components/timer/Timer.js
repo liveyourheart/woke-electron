@@ -9,13 +9,17 @@ import SaveButton from './saveButton';
 export default class Timer extends Component {
   constructor(props){
     super();
+    this.state = {
+      isDirty: "true",
+      isTicking: "false"
+    }
   }
   render() {
     return (
       <div>
           {this.props.showProgress ? <ProgressBar /> : null}        
           <TimeInput />
-          <TimeControls />
+          <TimeControls isTicking={this.state.isTicking}/>
           <TaskInputs />
           <SaveButton />   
       </div>
