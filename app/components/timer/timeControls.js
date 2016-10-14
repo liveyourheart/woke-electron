@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import IconButton from 'material-ui/IconButton';
 import AvPlayCircleFilled from 'material-ui/svg-icons/av/play-circle-filled';
-import AvPauseCirlceFilled from 'material-ui/svg-icons/av/pause-circle-filled';
+import AvPauseCircleFilled from 'material-ui/svg-icons/av/pause-circle-filled';
 import {cyan700} from 'material-ui/styles/colors';
 
 export default class TimeControls extends Component {
@@ -24,7 +24,10 @@ export default class TimeControls extends Component {
                 <IconButton style={style} iconStyle={iconStyle}
                     disableTouchRipple={true}
                 >
+                {this.props.isTicking ?
+                    <AvPauseCircleFilled color={cyan700}/> :
                     <AvPlayCircleFilled color={cyan700} />
+                }
                 </IconButton>
             </div>
         );
