@@ -6,9 +6,9 @@ import HabitItem from './habitItem'
 export default class HabitCategoryContainer extends Component {
   render() {
     const style ={
-        width: "99%",
-        border: "3px solid",
-        borderRadius: "1px",
+        width: "98%",
+        border: "3px solid rgb(100,100,100)",
+        borderRadius: "2px",
         marginLeft: "auto",
         marginRight: "auto",
         marginBottom: "5px",
@@ -20,7 +20,7 @@ export default class HabitCategoryContainer extends Component {
         color: "rgb(48, 48, 48)"
     }
     const HeaderStyle = {
-        backgroundColor: "rgb(255, 255, 255)",
+        backgroundColor: "rgb(100,100,100)",
         marginTop: "0px",
         padding: "0",
     }

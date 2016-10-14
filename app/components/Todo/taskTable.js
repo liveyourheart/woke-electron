@@ -7,13 +7,18 @@ export default class TaskTable extends Component {
     render() {
         const style = 
         {
-            height: '90vh'
+            height: '90vh',
+            borderLeft: "2px solid rgb(100,100,100)",
+        }
+        const titleStyle = {
+            color:"rgb(100,100,100)",
+            borderBottom: "2px solid rgb(100,100,100)",
         }
         return (
             <div>
                 <Card style={style}>
                     <CardTitle
-                        subtitle='Tasks To Do'
+                        subtitle='Tasks To Do' style={titleStyle}
                     />
                     <Table>
                         <TableBody>

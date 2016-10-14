@@ -2,9 +2,8 @@ body {
   position: relative;
   color: white;
   height: 100vh;
-  background-color: #232C39;
+  background-color: rgb(80,80,80);
   font-family: Arial, Helvetica, Helvetica Neue;
-  overflow-y: hidden;
 }
 
 h2 {

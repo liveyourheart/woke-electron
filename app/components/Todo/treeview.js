@@ -47,20 +47,20 @@ export default class TreeView extends Component {
 
         const activeList = listItems[3];
 
-        const treeStyle = {
-            height: '80vh'
+        const style = {
+            color: 'red'
         }
 
         return (
             <div>
                 <MuiTreeList
+                    style = {style}
                     useFolderIcons={true}
                     listItems = {listItems}
                     contentKey = {'title'}
                     listItemIsEnabled={true}
                     activeListItem = {2}
-                    expandedListItems = {[1,2]}
-                    style = {treeStyle}                
+                    expandedListItems = {[1,2]}              
                 />
             </div> 
         );

@@ -8,8 +8,8 @@ class componentName extends Component {
         const buttonStyle = {
             marginLeft: 'auto',
             marginRight: 'auto',
-            display: 'block',
-            textAlign: 'center'
+            textAlign: 'center',
+            borderTop: "2px solid rgb(100,100,100)",
         }
         return (
             <div style={buttonStyle}>

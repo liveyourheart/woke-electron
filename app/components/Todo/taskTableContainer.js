@@ -7,9 +7,10 @@ export default class TaskTableContainer extends Component {
         const style = 
         {
             height: '100vh',
-            width: '69.7%',
+            width: '70%',
             display: 'inline',
-            float: 'right'
+            float: 'right',
+            
         }
 
         return (
