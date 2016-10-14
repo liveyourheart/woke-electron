@@ -25,8 +25,8 @@ export default class TimeControls extends Component {
                     disableTouchRipple={true}
                 >
                 {this.props.isTicking ?
-                    <AvPlayCircleFilled color={cyan700}/> :
-                    <AvPauseCircleFilled color={cyan700} />
+                    <AvPauseCircleFilled color={cyan700}/> :
+                    <AvPlayCircleFilled color={cyan700} />
                 }
                 </IconButton>
             </div>

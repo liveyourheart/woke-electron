@@ -7,15 +7,15 @@ export default class TaskInputs extends Component {
             margin: '15px',
             display: 'inline-block',
             textAlign: 'Center',
-            width: '250px'
+            width: '45%'
         };
 
         const divStyle = {
             marginLeft: "auto",
             marginRight: "auto",
             display: "block",
-            width: "95%",
-            textAlign: "center"
+            width: "85%",
+            textAlign: "center",
         }
 
         return (

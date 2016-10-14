@@ -6,7 +6,7 @@ import {pinkA200} from 'material-ui/styles/colors';
      render() {
          return (
              <div className="progress-bar">
-                <LinearProgress mode="determinate" value={80} color={pinkA200} />
+                <LinearProgress mode="determinate" value={this.props.progress} color={pinkA200} />
              </div>
          )
      }
