@@ -1,24 +1,34 @@
 import React, {Component} from 'react';
-import IconButton from 'material-ui/IconButton';
-import CreateNewFolder from 'material-ui/svg-icons/file/create-new-folder';
-import NoteAdd from 'material-ui/svg-icons/action/note-add';
+import RaisedButton from 'material-ui/RaisedButton';
+import Add from 'material-ui/svg-icons/content/add';
+import Divider from 'material-ui/Divider';
 
 class componentName extends Component {
     render() {
-        const buttonStyle = {
+        const divStyle = {
             marginLeft: 'auto',
             marginRight: 'auto',
-            display: 'block',
-            textAlign: 'center'
+            textAlign: 'center',
+            borderTop: "2px solid rgb(100,100,100)",
+        }
+        const buttonStyle = {
+            margin: '10px'
         }
         return (
-            <div style={buttonStyle}>
-                <IconButton>
-                    <CreateNewFolder />
-                </IconButton>
-                <IconButton>
-                    <NoteAdd />
-                </IconButton>
+            <div style={divStyle}>
+                <Divider />
+                <RaisedButton
+                    label="ADD"
+                    primary={true}
+                    icon={<i className="fa fa-plus-square fa-2x"></i>}
+                    style={buttonStyle}
+                />
+                <RaisedButton
+                    secondary={true}
+                    label="EDIT"
+                    style={buttonStyle}
+                    icon={<i className="fa fa-pencil-square fa-2x"></i>}
+                />
             </div>
         );
     }
