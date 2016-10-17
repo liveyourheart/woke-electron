@@ -14,6 +14,7 @@ export default class TreeView extends Component {
         
         //temporary data for
         const listItems = [
+            
             {
                 depth: 0,
                 children: [1],
@@ -24,7 +25,7 @@ export default class TreeView extends Component {
                 children: [2],
                 parentIndex: 0,
                 title: 'Folder 1',
-                className: 'todoListItem'
+                className: 'todo',
             },
             {
                 depth: 2,
@@ -49,7 +50,7 @@ export default class TreeView extends Component {
         const activeList = listItems[3];
 
         const style = {
-            height: '70vh'
+            height: '70vh',
         }
 
         return (
@@ -61,7 +62,8 @@ export default class TreeView extends Component {
                     contentKey = {'title'}
                     listItemIsEnabled={true}
                     activeListItem = {2}
-                    expandedListItems = {[1,2]}         
+                    expandedListItems = {[1,2]}
+                    className = 'tree'         
                 />
             </div> 
         );

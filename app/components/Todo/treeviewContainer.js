@@ -21,7 +21,7 @@ export default class TreeViewContainer extends Component {
         return (
             <div style={style}>
                 <Paper style={paperStyle} zDepth={1}>
-                    <TreeView />
+                    <TreeView className="treeView"/>
                     
                     <TreeButtons />
                 </Paper>

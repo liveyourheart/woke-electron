@@ -12,7 +12,7 @@ class componentName extends Component {
             borderTop: "2px solid rgb(100,100,100)",
         }
         const buttonStyle = {
-            margin: '10px',
+            margin: '10px'
         }
         return (
             <div style={divStyle}>

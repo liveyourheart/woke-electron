@@ -42,3 +42,10 @@ i {
   color: red;
   background-color: blue;
 }
+
+span div{ 
+  color: white;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
