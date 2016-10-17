@@ -17,13 +17,14 @@ export default class TreeView extends Component {
             {
                 depth: 0,
                 children: [1],
-                title: 'base'
+                title: 'base',
             },
             {
                 depth: 1,
                 children: [2],
                 parentIndex: 0,
-                title: 'Folder 1'
+                title: 'Folder 1',
+                className: 'todoListItem'
             },
             {
                 depth: 2,
@@ -48,19 +49,19 @@ export default class TreeView extends Component {
         const activeList = listItems[3];
 
         const style = {
-            color: 'red'
+            height: '70vh'
         }
 
         return (
             <div>
                 <MuiTreeList
-                    style = {style}
+                    style={style}
                     useFolderIcons={true}
                     listItems = {listItems}
                     contentKey = {'title'}
                     listItemIsEnabled={true}
                     activeListItem = {2}
-                    expandedListItems = {[1,2]}              
+                    expandedListItems = {[1,2]}         
                 />
             </div> 
         );

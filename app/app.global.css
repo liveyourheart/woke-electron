@@ -3,7 +3,7 @@ body {
   color: white;
   height: 100vh;
   background-color: rgb(80,80,80);
-  font-family: Arial, Helvetica, Helvetica Neue;
+  font-family: Helvetica, Helvetica Neue;
 }
 
 h2 {
@@ -32,4 +32,13 @@ a:hover {
   opacity: 1;
   text-decoration: none;
   cursor: pointer;
+}
+
+i {
+  color: rgba(0,0,0, 0.75);
+}
+
+.todoListItem {
+  color: red;
+  background-color: blue;
 }
