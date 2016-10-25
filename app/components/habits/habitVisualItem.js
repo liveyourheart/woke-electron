@@ -8,7 +8,7 @@ export default class HabitVisualItem extends Component {
         }
         return (
             <div style={style}>
-                <i className="fa fa-check-square fa-2x"></i>
+                <i className="fa fa-check-square"></i>
             </div>
         );
     }

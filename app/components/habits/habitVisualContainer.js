@@ -6,7 +6,7 @@ export default class HabitVisualContainer extends Component {
         const style = {
             backgroundColor:'rgb(100,100,100)',
             width: '100%',
-            height: '75%',
+            height: '50%',
             borderRadius: '2px',
             padding: '1px',
             marginLeft: 'auto',
@@ -15,9 +15,9 @@ export default class HabitVisualContainer extends Component {
 
         const itemStyle = {
             width: '14%',
-            height: '100%',
+            height: '150%',
             display: 'inline-block',
-            marginTop: '1%'
+            marginTop: '1.5%'
         }
 
         const containerStyle = {
