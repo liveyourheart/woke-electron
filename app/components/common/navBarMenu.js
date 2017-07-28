@@ -4,6 +4,7 @@ import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
 import Paper from 'material-ui/Paper';
 import { Link } from 'react-router';
+import Drawer from 'material-ui/Drawer'
 
 export default class NavBarMenu extends Component {
     constructor(props) {
@@ -23,7 +24,7 @@ export default class NavBarMenu extends Component {
         }
         return (
             <div className="navbar-menu">
-                <Paper zDepth={5} style={style}> 
+                <Drawer> 
                     <Menu>
                         <MenuItem primaryText = {this.state.home} onTouchTap={this.props.closeMenu}/>
                         <MenuItem primaryText = {this.state.pomodoro} onTouchTap={this.props.closeMenu}/>
@@ -31,7 +32,7 @@ export default class NavBarMenu extends Component {
                         <MenuItem primaryText = {this.state.habits} onTouchTap={this.props.closeMenu}/>
                         <MenuItem primaryText = {this.state.todos} onTouchTap={this.props.closeMenu}/>
                     </Menu>
-                </Paper>
+                </Drawer>
             </div>
         )     
     }
